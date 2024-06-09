@@ -4,8 +4,8 @@
 
 ```go
 import (
-  "gorm.io/driver/mysql"
-  "gorm.io/gorm"
+  "github.com/wubin1989/mysql"
+  "github.com/wubin1989/gorm"
 )
 
 // https://github.com/go-sql-driver/mysql
@@ -17,8 +17,8 @@ db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
 ```go
 import (
-  "gorm.io/driver/mysql"
-  "gorm.io/gorm"
+  "github.com/wubin1989/mysql"
+  "github.com/wubin1989/gorm"
 )
 
 var datetimePrecision = 2
@@ -39,8 +39,8 @@ db, err := gorm.Open(mysql.New(mysql.Config{
 ```go
 import (
   _ "example.com/my_mysql_driver"
-  "gorm.io/gorm"
-  "gorm.io/driver/mysql"
+  "github.com/wubin1989/gorm"
+  "github.com/wubin1989/mysql"
 )
 
 db, err := gorm.Open(mysql.New(mysql.Config{
